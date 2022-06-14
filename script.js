@@ -1,3 +1,4 @@
+//Variáveis
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -36,8 +37,7 @@ function fazerPergunta() {
     const totalRespostas = respostas.length
     const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
-    const pergunta = "<div>" + inputPergunta.value + "</div>"
-    elementoResposta.innerHTML = respostas[numeroAleatorio]
+    elementoResposta.innerHTML = "<div>" + inputPergunta.value + "</div>" + respostas[numeroAleatorio]
 
     elementoResposta.style.opacity = 1;
 
